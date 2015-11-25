@@ -30,6 +30,9 @@ Final.Rate <- cast(Final.Rate,Subject~ConditionPair)
 
 # Code whether they learned (> 60%) or not
 attach(Final.Rate)
-Final.Rate$Learner = ifelse((Gain >= 0.6 | Loss >= 0.6),
+Final.Rate$Learner = ifelse((Gain >= 0.6 & Loss >= 0.6),
                             "1","0")
 detach(Final.Rate)
+
+# save result as csv
+write.csv(Final.Rate, "LearningRates.csv")
