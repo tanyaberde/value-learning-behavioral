@@ -34,5 +34,5 @@ Final.Rate$Learner = ifelse((Gain >= 0.6 & Loss >= 0.6),
                             "1","0")
 detach(Final.Rate)
 
-# save result as csv
+# Save result as csv
 write.csv(Final.Rate, "LearningRates.csv")
