@@ -28,7 +28,7 @@ Final.Rate = ddply(Final.Rate.data,.(Subject, ConditionPair),
 require(reshape)
 Final.Rate <- cast(Final.Rate,Subject~ConditionPair)
 
-# Code whether they learned (> 60%) or not
+# Code whether they learned (> 60%) the Gain and Loss faces, or not
 attach(Final.Rate)
 Final.Rate$Learner = ifelse((Gain >= 0.6 & Loss >= 0.6),
                             "1","0")

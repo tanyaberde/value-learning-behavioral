@@ -54,5 +54,5 @@ data$ConditionPair = ifelse(Version=="1" & (TrialChoice=="M01.bmp" | TrialChoice
                                    "Nothing"
                                    ))))))))))))
 
-# GEEZBUS THERE HAS TO BE SOMETHING BETTER THAN IFELSE STATEMENTS, GAWD
+# FUCK THERE NEEDS TO BE SOMETHING BETTER THAN IFELSE STATEMENTS
 detach(data)
